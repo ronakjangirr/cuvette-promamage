@@ -1,0 +1,19 @@
+/* Main Styles*/
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0px 40px;
+}
+
+.dashboard {
+    display: flex;
+
+}

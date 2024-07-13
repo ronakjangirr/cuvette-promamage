@@ -1,0 +1,352 @@
+/* Dash */
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    width: 82vw;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+}
+
+.header h3 {
+    color: #707070;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 70px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.deleteStyle {
+    color: red;
+}
+
+.row {
+    flex-grow: 1;
+    max-height: 78vh;
+    overflow-y: auto;
+    width: 420px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background-color: #EEF2F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row::-webkit-scrollbar {
+    width: 10px;
+}
+
+.row::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.row::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.row::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdownContent a {
+    color: #707070;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.childRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    width: 90%;
+}
+
+.childRow p {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    letter-spacing: 1.5px;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 25px;
+}
+
+.minus {
+    color: #666666;
+}
+
+.startIcon {
+    font-size: 9px;
+    color: red;
+}
+
+.inputContainer {
+    width: 100%;
+    height: 2.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.inputContainer:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.btnCalander {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calanderButton {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #495057;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #495057;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+}
+
+.calanderButton:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.calanderButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.main {
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 20px 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.titleHeader h2 {
+    margin: 2px 20px;
+}
+
+.childTodoHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    align-items: center;
+    padding: 10px 10px 0px;
+}
+
+.childTodoHeader p {
+    color: #495057;
+}
+
+.todoHeader {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.expanded {
+    display: block;
+}
+
+.collapsed {
+    display: none;
+}
+
+.todoHeader {
+    cursor: pointer;
+}
+
+.footerButtonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerButton {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    background-color: #cdcdcd;
+    color: #737373;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.footerButton:hover {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+.footerButton.overdue {
+    background-color: #CF3636;
+    color: white;
+}
+
+.footerButton.overdueGreen {
+    background-color: #389a20;
+    color: white;
+}
+
+.listStyle {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.checklist {
+    list-style-type: none;
+    padding-left: 0;
+    padding: 10px;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 5px;
+    height: 15px;
+    width: 22px;
+}
+
+.inputContainer {
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.dropdownTwo {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownTwoContent {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 90px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 52%);
+    z-index: 2;
+    border-radius: 4px;
+    left: -250%;
+    top: 90%;
+    padding: 10px;
+}
+
+.dropdownTwoContent a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownTwoContent a:hover {
+    background-color: #ddd;
+}
+
+.dropdownTwo:hover .dropdownTwoContent {
+    display: block;
+}
+
+.dropdownTwo:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+
+.toastContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.deleteOption {
+    color: red !important;
+}

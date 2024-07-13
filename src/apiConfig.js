@@ -1,0 +1,1 @@
+export const baseUrl = "https://promanage-y1j4.onrender.com/"

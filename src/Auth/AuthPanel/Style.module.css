@@ -1,0 +1,44 @@
+/* AuthPanel  */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17A2B8;
+}
+
+.imageContent {
+  text-align: center;
+}
+
+.imageContent h2,
+p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.image {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col8 {
+  flex-basis: 60%;
+}
+
+.col4 {
+  flex-basis: 40%;
+}

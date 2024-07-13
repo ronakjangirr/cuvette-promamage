@@ -1,0 +1,40 @@
+/* Analytics */
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.row {
+  height: 270px;
+  width: 400px;
+  background-color: #F8FCFF;
+  border-radius: 10px;
+}
+
+.header h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.list h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+}
+
+.icon {
+  font-size: 0.8rem;
+  color: #83C5CC;
+  margin-right: 10px;
+}

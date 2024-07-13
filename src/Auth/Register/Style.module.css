@@ -1,0 +1,101 @@
+/* Register.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #17A2B8;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #128799;
+}
+
+.inputContainer {
+  display: flex;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  width: 16rem;
+  padding: 5px;
+}
+
+.inputContainer:focus-within {
+  border-color: #656668;
+}
+
+.inputField {
+  padding-left: 7px;
+  width: 200px;
+  border: none;
+  outline: none;
+}
+
+.inputField:focus {
+  background-color: white;
+}
+
+.icon {
+  color: #757575;
+}
+
+.heading {
+  text-align: center;
+  color: #343434;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 60px;
+}
+
+.btnContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btnContainer p {
+  color: #837c7c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.outlineButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #17A2B8;
+  border-radius: 1rem;
+  color: #007bff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.outlineButton:hover {
+  background-color: #17A2B8;
+  color: #fff;
+}
+
+.errorColor {
+  color: red;
+}
